@@ -1,5 +1,6 @@
 import 'package:easy_to_travel/core/theme/theme_colors.dart';
 import 'package:easy_to_travel/core/theme/theme_text_styles.dart';
+import 'package:easy_to_travel/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class PopulerWidget extends StatelessWidget {
@@ -14,6 +15,7 @@ class PopulerWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 16, right: 12),
             child: InkWell( onTap: (){
+              Navigator.pushNamed(context, AppRoutes.rivierarestaurant);
 
             },
               child: Container( width: 190, height: 258, color: ThemeColors.backgroundColor,

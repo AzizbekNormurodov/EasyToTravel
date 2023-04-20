@@ -6,5 +6,6 @@ class AppRoutes {
   static const String main = '/main';
   static const String details = '/details';
   static const String pincode = '/pincode';
+  static const String rivierarestaurant = '/rivierarestaurant';
 
 }
