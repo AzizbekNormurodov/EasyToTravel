@@ -29,6 +29,7 @@ class _MainPageState extends State<MainPage> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: currentIndex,
+          type: BottomNavigationBarType.fixed,
           onTap: (index) {
             setState(() {
               currentIndex = index;
@@ -40,11 +41,11 @@ class _MainPageState extends State<MainPage> {
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_bag),
+              icon: Icon(Icons.assignment),
               label: 'MyPurchases',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.flight_takeoff),
               label: 'Scoreboard',
             ),
             BottomNavigationBarItem(

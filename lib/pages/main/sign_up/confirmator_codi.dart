@@ -29,7 +29,7 @@ class _ConfirmationCodePageState extends State<ConfirmationCodePage> {
           currentFocus.unfocus();
         }
       },
-      child: Scaffold(
+      child: Scaffold( backgroundColor: Colors.white,
         appBar: AppBar(
           toolbarHeight: 76.0,
           elevation: 0.0,

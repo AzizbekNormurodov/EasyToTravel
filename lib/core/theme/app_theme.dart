@@ -12,7 +12,7 @@ final lightTheme = ThemeData(
         TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
       },
     ),
-    appBarTheme:  AppBarTheme(
+    appBarTheme: AppBarTheme(
       shadowColor: Colors.black.withOpacity(0.2),
       backgroundColor: ThemeColors.white,
       surfaceTintColor: ThemeColors.white,
@@ -20,10 +20,22 @@ final lightTheme = ThemeData(
       titleTextStyle: ThemeTextStyles.appTitle,
       elevation: 0,
     ),
+    tabBarTheme: const TabBarTheme(
+      unselectedLabelColor: Color(0xff303940),
+      indicatorColor: ThemeColors.primary,
+      labelColor: ThemeColors.primary,
+    ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      showUnselectedLabels: true,
       backgroundColor: ThemeColors.white,
       selectedItemColor: ThemeColors.primary,
-      unselectedItemColor: ThemeColors.grey,
+      unselectedItemColor: Color(0xff9AA6AC),
+      selectedIconTheme: IconThemeData(
+        size: 24,
+      ),
+      unselectedIconTheme: IconThemeData(
+        size: 24,
+      ),
       selectedLabelStyle: TextStyle(
         fontSize: 10,
         fontWeight: FontWeight.w500,
@@ -31,6 +43,7 @@ final lightTheme = ThemeData(
       unselectedLabelStyle: TextStyle(
         fontSize: 10,
         fontWeight: FontWeight.w500,
+        color: Color(0xff9AA6AC),
       ),
       elevation: 3,
     ),
@@ -94,5 +107,8 @@ final lightTheme = ThemeData(
         fontWeight: FontWeight.w500,
       ),
     ),
-    textTheme: TextTheme(bodyText1: TextStyle(fontSize: 22, fontWeight: FontWeight.w700,))
-);
+    textTheme: const TextTheme(
+        bodyText1: TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
+    )));

@@ -33,7 +33,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
         setState(() {});
       },
-      child: Scaffold(
+      child: Scaffold( backgroundColor: Colors.white,
         appBar: AppBar(
         ),
         body: Padding(

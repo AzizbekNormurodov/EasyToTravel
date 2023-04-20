@@ -16,7 +16,7 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(
       const Duration(seconds: 2),
       () {
-        Navigator.pushReplacementNamed(context, AppRoutes.signup);
+        Navigator.pushReplacementNamed(context, AppRoutes.main);
       },
     );
   }
@@ -26,10 +26,10 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 0,
-        surfaceTintColor: ThemeColors.backgroundColor,
-        backgroundColor: ThemeColors.backgroundColor,
+        surfaceTintColor: Colors.white,
+        backgroundColor: Colors.white,
       ),
-      backgroundColor: ThemeColors.backgroundColor,
+      backgroundColor: Colors.white,
       body: const Center(
         child: Image(
           image: AssetImage('assets/png/logo.png'),
